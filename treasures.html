@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap">
+</head>
+<body>
+    <h1>Treasure Hunt</h1> 
+    <div id="container">
+        <div id="grid" class="setup"></div>
+        <div id="buttons">
+            <button id="start">End Setup</button>
+            <button id="reset">Reset</button>
+            <button id="end">End Game</button>
+        </div>
+    </div>   
+    <div id="gameInfo">
+        <p>Score: <span id="score">0</span></p>
+        <p>Completed Rounds: <span id="rounds">0</span></p>
+    </div>
+    <p id="remainingTreasure">Remaining Treasures: 
+        <span id="tc5" class="treasureCount">0</span>
+        <span id="tc6" class="treasureCount">0</span>
+        <span id="tc7" class="treasureCount">0</span>
+        <span id="tc8" class="treasureCount">0</span>
+    </p>
+    <p id="userPrompt">Click a gridcell to place an object.</p>
+    <p id="errorMessage"></p>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popup-text"></span>
+        </div>
+    </div>
+    <footer>
+        <p>Background image by <a href="https://www.freepik.com/free-vector/tropical-island-with-treasure-chest-broken-pirate-ship-cartoon-sea-landscape-with-sail-boat-after-shipwreck-with-skull-black-sails-palm-trees-gold-coins-uninhabited-island_15709554.htm#from_view=detail_alsolike">upklyak on Freepik</a>. Other assets by Snigdha.</p>
+    </footer>
+    <script src="treasures.js"></script>
+</body>
+</html>
