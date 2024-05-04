@@ -5,16 +5,6 @@ This JavaScript program implements a simple game where the user controls a treas
 The game consists of three stages: setup, play, and end. During the setup stage, the user places treasures, obstacles, and the treasure hunter on the grid. In the play stage, the treasure hunter attempts to collect treasures by moving horizontally or vertically. The game ends when the user decides to end the play stage, no treasures are left, or the treasure hunter is unable to move.
 
 ## File Structure
-assets/
-background.jpg
-obstacle.png
-treasure.png
-hunter.png
-
-index.html
-styles.css
-treasures.js
-
 - `index.html`: HTML file containing the game interface.
 - `styles.css`: CSS file for styling the game interface.
 - `treasures.js`: JavaScript file containing the game logic.
