@@ -1,0 +1,171 @@
+body, html {
+    font-family: "Pirata One", sans-serif;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(55, 94, 0);
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+#gameInfo {
+    display: none;
+    height: auto;
+    width: 350px;
+    margin: 5px 0;
+    background-color: rgb(177, 233, 99, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(55, 94, 0);
+}
+
+#gameInfo p {
+    margin: 5px 0;
+}
+
+#remainingTreasure {
+    display: none;
+    margin-top: 5px;
+    background-color: rgb(177, 233, 99, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(55, 94, 0);
+}
+
+.treasureCount {
+    padding: 3px;
+    margin-right: 4px;
+}
+
+#userPrompt {
+    font-size: 26px;
+    color: rgb(55, 94, 0);
+    margin: 3px 0;
+    background-color: rgba(205, 242, 246, 0.5);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#errorMessage {
+    font-size: 20px;
+    color: red;
+    margin: 0;
+    background-color: rgba(205, 242, 246, 0.5);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#container {
+    position: relative;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    margin-top: 10px;
+}
+
+.cell {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(82, 167, 175);
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(202, 227, 168);
+}
+
+.setup.cell:hover {
+    background-color: rgb(177, 233, 99);
+}
+
+#buttons {
+    position: absolute;
+    bottom: 20px;
+    left: calc(100% + 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+#buttons button {
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    background-color: rgb(177, 233, 99);
+    color: rgb(55, 94, 0);
+    font-size: 20px;
+    font-family: "Pirata One", sans-serif;
+    letter-spacing: 2px;
+}
+
+#buttons button:hover {
+    background-color: rgb(202, 227, 168);
+}
+
+#buttons .hidden {
+    visibility: hidden;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(205, 242, 246);
+    color: green;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    animation: popup-animation 0.5s ease;
+}
+
+.popup-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-content button {
+    margin-top: 10px;
+    background-color: rgb(177, 233, 99);
+    font-family: "Pirata One", sans-serif;
+    font-size: 15px;
+    color: rgb(55, 94, 0);
+}
+
+@keyframes popup-animation {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    font-style: italic;
+    color: rgb(55, 94, 0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
